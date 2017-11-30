@@ -1,14 +1,15 @@
 $(document).ready(function() {
 
-    $("#search-button").on('click', function() {
+    $("#submit-button").on('click', function(e) {
+        e.preventDefault();
         // make variables for collecting information filled out inside the form
         // GET request
-        var searchTerm = $("#serch-term").val();
+        var searchTerm = $("#search-term").val();
 
         var begin = $("#start-year").val();
         var beginDate = begin + "0101";
 
-        var numOfResults = ;
+        // var numOfResults = ;
 
         var end = $("#end-year").val();
         var endDate = end + "0101";
