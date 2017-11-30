@@ -5,14 +5,15 @@
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<link rel="stylesheet" href="style.css">
+
+
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="NYTimes.js"></script>
 
-<link rel="stylesheet">
-<meta name="viewpage" con>
 </head>
 <body>
   
@@ -23,11 +24,15 @@
 					<h1>New York Times Search</h1>
 			</div>
 		</div>
+</div>
 
 		<div class="row">
 			<div class="col-sm-12">
-			<div class="panel panel-primary">
+			<div class="panel panel-default">
+				<div class="panel-heading">
               <h2>Search Parameters<i class="fa fa-address-book" aria-hidden="true"></i></h2>
+          </div>
+          <div class="panel-body">
               <form>
                 <div class="form-group">
                 	<label for ="search-term">Search Term:
@@ -60,44 +65,38 @@
                 </div>
 				 <br>
 
-
-				
-				<button class= "btn-primary">Search</button>
-				<button class="btn-primary">Clear Results</button>
+				<button class= "btn-default" id="search-button">Search</button>
+				<button class="btn-default" id="clear-button">Clear Results</button>
 
               </form>
           </div>
-             
-
-
-			</div>
+          </div>
+		</div>
 			
-
-
-
-
 		</div>
 
 		<div class="row">
 			<div class="col-sm-12">
-
-              <h2>Top Articles<i class="fa fa-address-book" aria-hidden="true"></i></h2>
-              <form>
-               
-              </form>
+			<div class="panel panel-default">
+				<div class= "panel-heading">
+					<h2>Top Articles</h2>
+				</div>
+				<div class="panel panel-footer">
+					<div id="search-results">
+					</div>
+				</div>
+			</div>
+            
+              </div>
              
-
+			</div>
 
 			</div>
 			
-
-
-
-
 		</div>
 
 	</div>
-</div>
+
 
 
 </body>
