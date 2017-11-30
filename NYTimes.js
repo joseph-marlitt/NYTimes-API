@@ -5,14 +5,18 @@ $(document).ready(function() {
         // make variables for collecting information filled out inside the form
         // GET request
         var searchTerm = $("#search-term").val();
+        console.log(searchTerm);
 
         var begin = $("#start-year").val();
         var beginDate = begin + "0101";
+        console.log(beginDate);
 
-        // var numOfResults = ;
+        var numOfResults = $("#num").val();
+        console.log(numOfResults);
 
         var end = $("#end-year").val();
         var endDate = end + "0101";
+        console.log(endDate);
         var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=7b8facd071474e0eaef550125d430f18&q=" + searchTerm + "&begin_date=" + beginDate + "&end_date=" + endDate;
 
         $.ajax({
